@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Ícone do menu -->
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -18,6 +19,14 @@
             </ul>
         </nav>
     </header>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active'); // Alterna a classe 'active' para exibir ou ocultar o menu
+        }
+    </script>
+    
 
     <main>
         <section class="hero">
